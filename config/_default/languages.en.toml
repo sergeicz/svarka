@@ -1,0 +1,57 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "На завод"
+
+[params]
+  displayName = "En"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  
+  # Путь к логотипу (без префикса 'assets/')
+  logo = "img/LorW.png"
+  
+  # Логотип для темной темы (опционально)
+  secondaryLogo = "img/LorB.png"
+  
+  description = "My awesome website"
+  copyright = """ <a href="https://t.me/allo_na_bot" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Сделал 🖤 сам </a> """
+
+[params.author]
+  name = "Сергеич"
+  email = "youremail@example.com"
+  image = "img/author.jpg"
+  # imageQuality = 96
+  headline = "Заголовок"
+  bio = "То сё пятое десятое"
+  
+  links = [
+  #  { link = "https://link-to-some-website.com/" },
+    { instagram = "https://www.instagram.com/naza.vod/" },
+    { telegram = "https://ct.iskra.sbs/" },
+    { tiktok = "https://www.tiktok.com/@naza.vod" },
+    { youtube = "https://www.youtube.com/@Iskra_w" }
+  ]
+
+# -- Footer Menu --
+#[[footer]]
+#  name = "Теги"
+#  pageRef = "tags"
+#  weight = 10
+
+#[[footer]]
+#  name = "Категории"
+#  pageRef = "categories"
+#  weight = 20
+
+#[[footer]]
+#  name = "Контакты"
+#  url = "/contact"
+#  weight = 30
+
+# [[footer]]
+#   name = "Политика конфиденциальности"
+#   url = "/privacy"
+#   weight = 40

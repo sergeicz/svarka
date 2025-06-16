@@ -1,0 +1,104 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+  name = "Главная"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Блог"
+  weight = 20
+  identifier = "blog"
+
+[[main]]
+  name = "Как так"
+  parent = "blog"
+  pageRef = "posts"
+  weight = 1
+
+[[main]]
+  name = "Железки"
+  parent = "blog"
+  pageRef = "posts"
+  weight = 2
+
+[[main]]
+  name = "ОйТи'ха"
+  parent = "blog"
+  pageRef = "posts"
+  weight = 3
+
+[[main]]
+  name = "Связь"
+  weight = 30  # Общий вес основного пункта
+  identifier = "contacts"  # Уникальный идентификатор для родительского пункта
+
+[[main]]
+  name = "Резюме"
+  parent = "contacts"  # Ссылка на идентификатор родителя
+  pageRef = "/resume/"  # Полный путь к разделу
+  weight = 1  # Вес внутри подменю
+
+[[main]]
+  name = "Контакты"
+  parent = "contacts"  # Ссылка на идентификатор родителя
+  pageRef = "/contact/"  # Полный путь к разделу
+  weight = 2  # Вес внутри подменю
+
+#[[subnavigation]]
+#  name = "An interesting topic"
+#  pageRef = "tags/interesting-topic"
+#  weight = 10
+
+#[[subnavigation]]
+#  name = "My Awesome Category"
+#  pre = "github"
+#  pageRef = "categories/awesome"
+#  weight = 20
+
+#[[main]]
+#  name = "Categories"
+#  pageRef = "categories"
+#  weight = 30
+
+#[[main]]
+#  name = "Tags"
+#  pageRef = "tags"
+#  weight = 30
+
+
+# -- Footer Menu --
+# Меню футера отображается внизу страницы перед копирайтом
+
+footer.showMenu = false
+
+# [[footer]]
+#  name = "Теги"
+#  pageRef = "tags"
+#  weight = 10
+
+# [[footer]]
+#  name = "Категории"
+#  pageRef = "categories"
+#  weight = 20
+
+# Дополнительные пункты (раскомментируйте при необходимости)
+# [[footer]]
+#   name = "Политика конфиденциальности"
+#   url = "/privacy/"
+#   weight = 30
+
+# [[footer]]
+#   name = "Контакты"
+#   pageRef = "contact"
+#   weight = 40

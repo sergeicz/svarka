@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on На завод</title>
+    <link>http://localhost:1313/series/</link>
+    <description>Recent content in Series on На завод</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@example.com (Сергеич)</managingEditor>
+    <webMaster>youremail@example.com (Сергеич)</webMaster>
+    <copyright> &lt;a href=&#34;https://t.me/allo_na_bot&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; style=&#34;color: inherit; text-decoration: none;&#34;&gt;Сделал 🖤 сам &lt;/a&gt; </copyright>
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
